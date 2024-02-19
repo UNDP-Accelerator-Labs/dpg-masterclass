@@ -1,100 +1,99 @@
-  {% include slide.html %}
-  <div class="grid-container fluid project-page">
-    <div class="grid-x grid-margin-x">
-      <div class="cell large-offset-1 small-offset-1 small-10">
-        <div class="column">
-          <h2 class="" tabindex="0" data-viewport="true">
-            What are Digital Public Goods?
-            <br />
-          </h2>
-        </div>
-      </div>
-      <div
-        class="cell large-offset-3 large-7 small-offset-1 small-10 copy-text"
-        data-viewport="true"
-      >
-        <div class="column">
-          <p>
-            Digital Public Goods (DPGs) are open-source software, open data,
-            open AI models, open standards, and open content that adhere to
-            privacy and other applicable laws and best practices, do no harm,
-            and help attain the Sustainable Development Goals (SDGs). They are
-            digital, can be infinitely stored, copied, and distributed without
-            becoming depleted, and at close to zero cost.
-          </p>
-          <p>
-            GitHub is a platform that fosters open-source development, making it
-            an ideal tool for working on DPGs. It allows for seamless
-            collaboration between different contributors, and provides tools for
-            version control, issue tracking, and code review.
-          </p>
-        </div>
+{% include slide.html %}
+<div class="grid-container fluid project-page">
+  <div class="grid-x grid-margin-x">
+    <div class="cell large-offset-1 small-offset-1 small-10">
+      <div class="column">
+        <h2 class="" tabindex="0" data-viewport="true">
+          What are Digital Public Goods?
+          <br />
+        </h2>
       </div>
     </div>
-
-    <div class="grid-x grid-margin-x">
-      <div class="cell large-offset-1 small-offset-1 small-10">
-        <div class="column">
-          <h2 class="" tabindex="0" data-viewport="true">
-            DPG Masterclass Hands-on Activities
-          </h2>
-        </div>
-      </div>
-      <div
-        class="cell large-offset-3 large-7 small-offset-1 small-10 copy-text"
-        data-viewport="true"
-      >
-        <div class="column">
-          <p>
-            The hands-on activities for this masterclass are mainly focused on
-            two key aspects of using GitHub:
-          </p>
-          <li>
-            Documenting: We’ll guide you through the process of creating and
-            maintaining comprehensive documentation for your DPG projects. Good
-            documentation is key to the success of any project, and we’ll show
-            you how to do it right on GitHub.
-          </li>
-          <li>
-            Collaborating: GitHub is all about collaboration. We’ll show you how
-            to use issues, pull requests, and other GitHub features to
-            collaborate effectively with your team and the wider GitHub
-            community.
-          </li>
-        </div>
-      </div>
-    </div>
-    <div class="grid-x project-explore">
-      <div class="cell large-offset-1 small-offset-1 small-10">
-        <div class="column">
-          <h2 class="" tabindex="0" data-viewport="true">
-            Ideas for Digital Public Goods in 2024
-          </h2>
-        </div>
-      </div>
-      <div class="grid-x grid-margin-x content-data">
-        <div class="cell medium-3">
-            {% for post in site.posts %}
-              <div class="content-card card">
-                <a href="{{ post.url }}">
-                  <h6 class="" tabindex="0" data-viewport="false">{{ post.owner }}</h6>
-                  <div class="content-caption">
-                    <h5 class="" tabindex="0" data-viewport="false">
-                      {{ post.title }}
-                    </h5>
-                    <p>
-                      {{ post.excerpt }}
-                    </p>
-                    <span class="cta__link cta--arrow">
-                      READ MORE
-                      <i></i>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            {% endfor %}
-          </div>
-          
+    <div
+      class="cell large-offset-3 large-7 small-offset-1 small-10 copy-text"
+      data-viewport="true"
+    >
+      <div class="column">
+        <p>
+          Digital Public Goods (DPGs) are open-source software, open data, open
+          AI models, open standards, and open content that adhere to privacy and
+          other applicable laws and best practices, do no harm, and help attain
+          the Sustainable Development Goals (SDGs). They are digital, can be
+          infinitely stored, copied, and distributed without becoming depleted,
+          and at close to zero cost.
+        </p>
+        <p>
+          GitHub is a platform that fosters open-source development, making it
+          an ideal tool for working on DPGs. It allows for seamless
+          collaboration between different contributors, and provides tools for
+          version control, issue tracking, and code review.
+        </p>
       </div>
     </div>
   </div>
+
+  <div class="grid-x grid-margin-x">
+    <div class="cell large-offset-1 small-offset-1 small-10">
+      <div class="column">
+        <h2 class="" tabindex="0" data-viewport="true">
+          DPG Masterclass Hands-on Activities
+        </h2>
+      </div>
+    </div>
+    <div
+      class="cell large-offset-3 large-7 small-offset-1 small-10 copy-text"
+      data-viewport="true"
+    >
+      <div class="column">
+        <p>
+          The hands-on activities for this masterclass are mainly focused on two
+          key aspects of using GitHub:
+        </p>
+        <li>
+          Documenting: We’ll guide you through the process of creating and
+          maintaining comprehensive documentation for your DPG projects. Good
+          documentation is key to the success of any project, and we’ll show you
+          how to do it right on GitHub.
+        </li>
+        <li>
+          Collaborating: GitHub is all about collaboration. We’ll show you how
+          to use issues, pull requests, and other GitHub features to collaborate
+          effectively with your team and the wider GitHub community.
+        </li>
+      </div>
+    </div>
+  </div>
+  <div class="grid-x project-explore">
+    <div class="cell large-offset-1 small-offset-1 small-10">
+      <div class="column">
+        <h2 class="" tabindex="0" data-viewport="true">
+          Ideas for Digital Public Goods in 2024
+        </h2>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x content-data">
+      {% for post in site.posts %}
+
+      <div class="cell medium-3">
+        <div class="content-card card">
+          <a href="{{ post.url }}">
+            <h6 class="" tabindex="0" data-viewport="false">
+              {{ post.owner }}
+            </h6>
+            <div class="content-caption">
+              <h5 class="" tabindex="0" data-viewport="false">
+                {{ post.title }}
+              </h5>
+              <p>{{ post.excerpt }}</p>
+              <span class="cta__link cta--arrow">
+                READ MORE
+                <i></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
