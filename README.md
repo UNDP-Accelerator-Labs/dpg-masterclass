@@ -24,7 +24,7 @@ owner: Owner of the Post
 
 To set up the project locally, follow these steps:
 
-1. **Clone the repository**: Use the command `git clone https://github.com/username/repository.git` to clone the repository to your local machine.
+1. **Clone the repository**: Use the command `git clone https://github.com/UNDP-Accelerator-Labs/dpg-masterclass.git` to clone the repository to your local machine.
 2. **Install Jekyll**: If you don't have Jekyll installed, use the command `gem install jekyll bundler` to install it.
 3. **Build the site**: Navigate to the root directory of the project and use the command `bundle exec jekyll serve` to build the site and run it locally.
 
