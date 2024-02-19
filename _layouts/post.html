@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS References -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/base-minimal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/country-site-header.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/language-switcher.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mega-menu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mobile-nav.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/page-hero.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/breadcrumbs.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/headingbig.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/download-card.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/project-detail.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/projectdetails.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/content-card.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/content-card-with-and-without-image.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/stats-slider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/stats-cards.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/stats-card-slider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/cta-link.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/input-fields.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/buttons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/newsletter-signup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/accordion.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/footer.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/templates/project-page.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/swiper.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- JS References -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/navigation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/undp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/lang-switcher.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/accordion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/smoothbgchange.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/font-resize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/viewport.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  </head>
+  <body>
+    {% include header.html %}
+
+    <div class="progress-container"><div class="progress-bar"></div></div>
+    <div class="grid-container fluid mt-h">
+      <div class="grid-x">
+        <div class="cell large-9 medium-offset-1 medium-10">
+          <nav
+            aria-label="breadcrumbs"
+            data-viewport="true"
+            class="breadcrumb inviewport"
+          >
+            <ul>
+              <li><a href="/" aria-label="Home">Home</a></li>
+              <li aria-current="Page Title">{{ page.title }}</li>
+            </ul>
+          </nav>
+          <div class="post-wrapper inviewport" data-viewport="true">
+            <h2 class="" tabindex="0" data-viewport="false">
+                {{ page.title }}
+              </h2>
+              <h6 class="" tabindex="0" data-viewport="false">
+                Posted {{ page.date | date: "%B %d, %Y" }}
+              </h6>              
+          </div>
+        </div>
+      </div>
+
+     <br/>
+      <div class="grid-x">
+        <div class="cell medium-7 medium-offset-1">
+            {{ content }}
+       
+        </div>
+      </div>
+        
+    </div>
+
+
+    {% include footer.html %}
+    
+    <script>
+    $(document).ready(function(){
+      navigationInitialize();
+      navigationOverFlow();
+      navigationInitialize();
+      langSwitch();
+      accordion('[data-accordion="mobile"]', '.footer-panel', 'active');
+      swiper('.stats-slider');
+    });
+    </script>
+  </body>
+</html>
