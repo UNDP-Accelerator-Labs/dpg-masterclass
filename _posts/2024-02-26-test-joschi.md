@@ -9,4 +9,4 @@ owner: Josua Krause
 
 ## Test Proposal
 
-This is a test proposal.
+This is a test proposal. Changed from my local machine.
